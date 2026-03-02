@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkReveal);
     checkReveal(); // Initial check
 
-    // Header transparency on scroll
+    // Header behavior on scroll
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {

@@ -159,7 +159,7 @@ h1, h2, h3 {
 
 .hero-content h1, #cta-banner h2 {
     font-size: clamp(2.5rem, 8vw, 4rem);
-    color: #ffffff;
+    color: #ffffff !important;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
@@ -167,7 +167,7 @@ h1, h2, h3 {
     font-size: 1.25rem;
     max-width: 600px;
     margin: 0 auto 2rem;
-    color: #ffffff;
+    color: #ffffff !important;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
@@ -282,14 +282,6 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-.feature-list li::before {
-    content: "&#10003;";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: 800;
-}
-
 /* About Section */
 .about-layout {
     display: grid;
@@ -313,8 +305,9 @@ h1, h2, h3 {
 
 .testimonial-card {
     padding: 32px;
-    background: var(--bg-light);
+    background: var(--white);
     border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
 }
 
 .stars {
@@ -340,6 +333,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 80px 0;
 }
 
 .cta-content {
@@ -371,6 +365,7 @@ h1, h2, h3 {
 
 .footer h3, .footer h4 {
     color: var(--accent);
+    margin-bottom: 1.5rem;
 }
 
 .footer a {
@@ -450,13 +445,12 @@ h1, h2, h3 {
         align-items: center;
     }
 
-    .btn-secondary {
-        margin-left: 0;
+    .btn {
         width: 100%;
     }
 
-    .btn-primary {
-        width: 100%;
+    .btn-secondary {
+        margin-left: 0;
     }
 
     .footer-grid {
